@@ -14,10 +14,10 @@
 
 ```sh
 # 1. Clone repository
- git clone <YOUR_GIT_URL>
+ git clone https://github.com/KindderSonne/pomodoro-gen.git
 
 # 2. Cài đặt dependencies
-cd <YOUR_PROJECT_NAME>
+cd pomodoro-gen
 npm install
 
 # 3. Chạy ứng dụng
