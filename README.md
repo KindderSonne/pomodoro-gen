@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+# Taskify Tune Tomato
 
-## Project info
+Ứng dụng quản lý Pomodoro và công việc cá nhân.
 
-**URL**: https://lovable.dev/projects/f551946a-5096-42b2-bba9-11351b4e7ec2
+## Công nghệ sử dụng
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn-ui
+- Firebase
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/f551946a-5096-42b2-bba9-11351b4e7ec2) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Hướng dẫn cài đặt
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone repository
+ git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# 2. Cài đặt dependencies
 cd <YOUR_PROJECT_NAME>
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3. Chạy ứng dụng
+yarn dev
+# hoặc
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Tính năng chính
+- Quản lý phiên Pomodoro
+- Theo dõi thời gian tập trung
+- Quản lý và hoàn thành công việc
+- Thống kê hiệu suất cá nhân
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Đóng góp
+Mọi đóng góp đều được hoan nghênh! Hãy tạo pull request hoặc issue nếu bạn có ý tưởng hoặc phát hiện lỗi.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f551946a-5096-42b2-bba9-11351b4e7ec2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+Bui Minh Ngoc - Le Hong Anh

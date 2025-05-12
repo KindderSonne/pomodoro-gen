@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import LoginButton from "@/components/auth/LoginButton";
@@ -78,7 +77,7 @@ const PomodoroApp = () => {
       
       <footer className="border-t mt-16">
         <div className="container mx-auto px-4 py-6 text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Pomodoro Focus App | Made with ♥
+          Made by Bui Minh Ngoc - Le Hong Anh
         </div>
       </footer>
     </div>

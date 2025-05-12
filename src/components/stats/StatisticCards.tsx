@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { collection, query, where, getDocs, orderBy, limit } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
@@ -15,18 +14,20 @@ interface StatisticProps {
 }
 
 const StatisticCard: React.FC<StatisticProps> = ({ title, value, icon, subtitle }) => (
-  <Card>
-    <CardContent className="p-6">
-      <div className="flex justify-between items-center">
-        <div>
-          <p className="text-sm font-medium text-muted-foreground">{title}</p>
-          <p className="text-2xl font-bold mt-1">{value}</p>
+  <Card className="w-full">
+    <CardContent className="p-4 md:p-6 w-full">
+      <div className="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-0">
+        <div className="flex-1">
+          <p className="text-sm font-medium text-muted-foreground break-words">{title}</p>
+          <p className="text-2xl font-bold mt-1 break-words">{value}</p>
           {subtitle && (
-            <p className="text-xs text-muted-foreground mt-1">{subtitle}</p>
+            <p className="text-xs text-muted-foreground mt-1 break-words">{subtitle}</p>
           )}
         </div>
-        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-          {icon}
+        <div className="max-w-[56px] max-h-[56px] h-12 w-12 sm:h-10 sm:w-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto sm:mx-0 overflow-hidden shrink-0">
+          <span className="w-8 h-8 flex items-center justify-center overflow-hidden">
+            {React.isValidElement(icon) ? React.cloneElement(icon as React.ReactElement, { className: (icon.props.className || '') + ' max-w-full max-h-full' }) : icon}
+          </span>
         </div>
       </div>
     </CardContent>
@@ -111,26 +112,26 @@ const StatisticCards: React.FC = () => {
   }, [currentUser]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="w-full max-w-full overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <StatisticCard
         title="Total Pomodoros"
         value={totalPomodoros.toString()}
-        icon={<Clock className="h-6 w-6 text-primary" />}
+        icon={<Clock className="h-8 w-8 text-primary" />}
       />
       <StatisticCard
         title="Tasks Completed"
         value={tasksCompleted.toString()}
-        icon={<CheckCheck className="h-6 w-6 text-green-500" />}
+        icon={<CheckCheck className="h-8 w-8 text-green-500" />}
       />
       <StatisticCard
         title="Current Streak"
         value={`${currentStreak} day${currentStreak === 1 ? '' : 's'}`}
-        icon={<Trophy className="h-6 w-6 text-yellow-500" />}
+        icon={<Trophy className="h-8 w-8 text-yellow-500" />}
       />
       <StatisticCard
         title="Focus Time"
         value={`${totalFocusHours} hrs`}
-        icon={<Play className="h-6 w-6 text-primary" />}
+        icon={<Play className="h-8 w-8 text-primary" />}
         subtitle="Total focused work time"
       />
     </div>

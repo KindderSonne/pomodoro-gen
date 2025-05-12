@@ -1,4 +1,3 @@
-
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
@@ -6,12 +5,12 @@ import { getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For demo purposes, we're using placeholder values - in a real app, these would be env variables
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY", // Replace with actual Firebase API key in production
-  authDomain: "pomodoro-app.firebaseapp.com",
-  projectId: "pomodoro-app",
-  storageBucket: "pomodoro-app.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAqLGnoPlqor1rXJ65_pSZRaMiAn-7pcNw",
+  authDomain: "pomo-gen-hust.firebaseapp.com",
+  projectId: "pomo-gen-hust",
+  storageBucket: "pomo-gen-hust.appspot.com",
+  messagingSenderId: "986878524205",
+  appId: "1:986878524205:web:0192e7f178d3674998f1a4"
 };
 
 // Initialize Firebase
