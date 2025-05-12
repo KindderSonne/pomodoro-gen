@@ -1,4 +1,4 @@
-# Taskify Tune Tomato
+# Pomodoro Gen
 
 Ứng dụng quản lý Pomodoro và công việc cá nhân.
 
@@ -32,8 +32,7 @@ npm run dev
 - Quản lý và hoàn thành công việc
 - Thống kê hiệu suất cá nhân
 
-## Đóng góp
-Mọi đóng góp đều được hoan nghênh! Hãy tạo pull request hoặc issue nếu bạn có ý tưởng hoặc phát hiện lỗi.
+
 
 ---
 Bui Minh Ngoc - Le Hong Anh
